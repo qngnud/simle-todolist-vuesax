@@ -1,8 +1,10 @@
+//src/main.js
+
 import Vue from 'vue'
 import App from './App.vue'
-
-Vue.config.productionTip = false
+import vuetify from '@/plugins/vuetify' // path to vuetify export
 
 new Vue({
-  render: h => h(App),
+  vuetify,
+  render: h => h(App)
 }).$mount('#app')
